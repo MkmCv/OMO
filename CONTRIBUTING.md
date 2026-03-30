@@ -128,6 +128,27 @@ oh-my-opencode/
 
 ## Development Workflow
 
+### Maintaining a Personal Fork
+
+If you maintain your own fork of this project, use the fork as your shared working repository and keep the main project as `upstream`.
+
+Recommended remote layout:
+
+```bash
+origin   https://github.com/<you>/<your-fork>.git
+upstream https://github.com/code-yeongyu/oh-my-openagent.git
+```
+
+Recommended branch model:
+
+- keep `dev` as your integration branch
+- create short-lived feature branches from `dev`
+- merge upstream updates into `dev`
+- merge teammate pull requests into `dev`
+
+See the [Fork Maintenance Guide](docs/guide/fork-maintenance.md) for the full workflow, collaborator setup, and branch protection recommendations.
+
+
 ### Build Commands
 
 ```bash
@@ -242,6 +263,18 @@ export function createMyHook(input: PluginInput) {
    - Reference issues if applicable ("Fix #123")
 6. **Push** to your fork and create a Pull Request
 7. **Describe** your changes clearly in the PR description
+
+### For Maintainers of a Shared Fork
+
+If you are running a team-maintained fork, prefer this flow:
+
+1. Invite collaborators to your fork on GitHub
+2. Ask them to clone your fork, not the upstream repository
+3. Ask them to branch from `dev`
+4. Require pull requests back into your fork's `dev`
+5. Protect `dev` with approval and CI checks
+
+This keeps your fork maintainable while preserving a clean path for syncing from upstream.
 
 ### PR Checklist
 

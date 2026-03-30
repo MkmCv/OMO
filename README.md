@@ -313,6 +313,8 @@ Opinionated defaults, adjustable if you insist.
 
 See [Configuration Documentation](docs/reference/configuration.md).
 
+Maintaining your own fork? Read the [Fork Maintenance Guide](docs/guide/fork-maintenance.md).
+
 **Quick Overview:**
 - **Config Locations**: `.opencode/oh-my-opencode.jsonc` or `.opencode/oh-my-opencode.json` (project), `~/.config/opencode/oh-my-opencode.jsonc` or `~/.config/opencode/oh-my-opencode.json` (user)
 - **JSONC Support**: Comments and trailing commas supported
